@@ -1,10 +1,11 @@
+import Navbar from "./components/Navbar";
 import "./style.css";
 
 function App() {
   return (
-    <>
-      <h1 class="text-3xl font-[100] text-primary underline">سلام!</h1>
-    </>
+    <div className='w-11/12 mx-auto'>
+      <Navbar />
+    </div>
   );
 }
 

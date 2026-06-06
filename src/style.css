@@ -1,9 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   themes:
-    corporate --default,
-    dark --prefersdark,
-    corporate;
+    autumn --default,
+    forest --prefersdark;
 }
 @theme {
   --font-pelak: "PelakFA", sans-serif;

@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./layouts/Navbar";
 import "./style.css";
 
 function App() {
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className="w-11/12 mx-auto">
       <Navbar />
     </div>
   );

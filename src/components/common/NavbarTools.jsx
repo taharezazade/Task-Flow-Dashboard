@@ -19,7 +19,7 @@ function NavbarTools() {
         </button>{" "}
       </Link>
       {/* theme toggle */}
-      <label className="toggle text-primary">
+      <label className="toggle text-base-content">
         <input type="checkbox" value="autumn" className="theme-controller" />
 
         <svg

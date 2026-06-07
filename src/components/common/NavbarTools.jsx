@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { HamburgerMenu, Notification } from "iconsax-reactjs";
 
-function NavbarTools() {
+function NavbarTools({ setIsSidebarOpen }) {
+  console.log("setIsSidebarOpen:", setIsSidebarOpen);
+
   return (
     <span className="flex flex-row gap-2">
       {/* sidebar menu icon */}
@@ -10,6 +12,7 @@ function NavbarTools() {
         color="currentColor"
         className="text-primary cursor-pointer"
         variant="Bulk"
+        onClick={() => setIsSidebarOpen((prev) => !prev)}
       />
 
       {/* notifications */}

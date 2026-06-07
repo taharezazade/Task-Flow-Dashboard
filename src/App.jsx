@@ -1,10 +1,11 @@
-import Navbar from "./layouts/Navbar";
+import MainLayout from "./layouts/MainLayout";
+
 import "./style.css";
 
 function App() {
   return (
-    <div className="w-11/12 mx-auto">
-      <Navbar />
+    <div className="mx-auto">
+      <MainLayout />
     </div>
   );
 }

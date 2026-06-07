@@ -2,21 +2,25 @@ import { SearchNormal } from "iconsax-reactjs";
 
 function SearchBox() {
   return (
-    <span className="flex flex-row items-center gap-2 p-1 outline-1 focus-within:outline-primary rounded-lg">
-      {/* input */}
-      <input
-        type="text"
-        placeholder="جستجو در تسک ها..."
-        className="input outline-none border-0 input-primary w-96 max-w-lg text-sm"
-      />
-      {/* Search Button */}
+    <div className="flex items-center gap-2 w-full max-w-xl rounded-xl border border-base-300 px-3 py-1 focus-within:border-primary transition-all">
       <SearchNormal
-        size={30}
+        size={22}
         color="currentColor"
         variant="Bold"
-        className="text-primary cursor-pointer ml-2"
+        className="text-primary"
       />
-    </span>
+
+      <input
+        type="text"
+        placeholder="جستجو در تسک‌ها..."
+        className="
+          w-full
+          bg-transparent
+          outline-none
+          text-sm
+        "
+      />
+    </div>
   );
 }
 

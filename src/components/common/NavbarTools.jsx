@@ -5,7 +5,7 @@ function NavbarTools({ setIsSidebarOpen }) {
   console.log("setIsSidebarOpen:", setIsSidebarOpen);
 
   return (
-    <span className="flex flex-row gap-2">
+    <span className="flex flex-row items-center gap-2">
       {/* sidebar menu icon */}
       <HamburgerMenu
         size={30}

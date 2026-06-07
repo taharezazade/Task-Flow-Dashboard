@@ -8,28 +8,52 @@ import {
   User,
 } from "iconsax-reactjs";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Sidebar({ isOpen }) {
   const items = [
-    { icon: Category2, label: "داشبود", to: "/" },
-    { icon: Building, label: "ورک اسپیس‌ها", to: "/workspaces" },
-    { icon: Kanban, label: "برد ها", to: "/boards" },
-    { icon: Star1, label: "مورد علاقه‌ها", to: "/favorites" },
-    { icon: Activity, label: "فعالیت‌ها", to: "/activity" },
-    { icon: Setting2, label: "تنظیمات", to: "/settings" },
+    {
+      icon: Category2,
+      label: "داشبورد",
+      to: "/",
+    },
+    {
+      icon: Building,
+      label: "ورک‌اسپیس‌ها",
+      to: "/workspaces",
+    },
+    {
+      icon: Kanban,
+      label: "بردها",
+      to: "/boards",
+    },
+    {
+      icon: Star1,
+      label: "علاقه‌مندی‌ها",
+      to: "/favorites",
+    },
+    {
+      icon: Activity,
+      label: "فعالیت‌ها",
+      to: "/activity",
+    },
+    {
+      icon: Setting2,
+      label: "تنظیمات",
+      to: "/settings",
+    },
   ];
 
   return (
     <aside
-      className={`bg-base-200 h-screen transition-all duration-300 overflow-hidden flex flex-col justify-between ${
-        isOpen ? "w-64" : "w-16"
+      className={`bg-base-200  transition-all duration-300 overflow-hidden flex flex-col justify-between ${
+        isOpen ? "w-44" : "w-16"
       }`}
     >
       {/* Top section */}
       <div>
         <div className="p-4 font-bold text-primary text-xl">
-          {isOpen ? "TaskFlow" : "TF"}
+          {isOpen ? "جریان وضایف" : "ج و"}
         </div>
 
         <ul className="menu px-2 w-full">
@@ -37,12 +61,15 @@ function Sidebar({ isOpen }) {
             const Icon = item.icon;
 
             return (
-                <li key={item.to} className="w-full">
-                <Link to={item.to} className="flex items-center gap-3 hover:text-primary hover:bg-primary/10 rounded-lg w-full">
+              <li key={item.to} className="w-full">
+                <NavLink
+                  to={item.to}
+                  className="flex items-center gap-3 hover:text-primary hover:bg-primary/10 rounded-lg w-full"
+                >
                   <Icon size="24" color="currentColor" variant="Bulk" />
 
                   {isOpen && <span>{item.label}</span>}
-                </Link>
+                </NavLink>
               </li>
             );
           })}
@@ -56,8 +83,8 @@ function Sidebar({ isOpen }) {
 
           {isOpen && (
             <div className="text-sm">
-              <div className="font-bold">Taha Rezazade</div>
-              <div className="text-xs opacity-70">Frontend Developer</div>
+              <div className="font-bold">طاها رضازاده</div>
+              <div className="text-xs opacity-70">توسعه دهنده فرانت‌ اند</div>
             </div>
           )}
         </div>

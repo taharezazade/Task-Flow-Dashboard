@@ -4,16 +4,17 @@ import NavbarTools from "../components/common/NavbarTools";
 
 function Navbar({ setIsSidebarOpen }) {
   return (
-    <section className="bg-base-100 w-full border-b border-base-300 p-4 flex flex-row items-center justify-between">
-      {/* theme toggle and notifications and sidebar Menu */}
-      <NavbarTools setIsSidebarOpen={setIsSidebarOpen} />
+    <header className="backdrop-blur-sm bg-base-100/50 px-4 py-3 sticky top-0 w-full z-50">
+      <div className="flex items-center justify-between gap-4">
+        <NavbarTools setIsSidebarOpen={setIsSidebarOpen} />
 
-      {/* Search Input and Search Btn Box */}
-      <SearchBox />
+        <div className="hidden md:flex flex-1 justify-center">
+          <SearchBox />
+        </div>
 
-      {/* Profile and Dropdown */}
-      <Profile />
-    </section>
+        <Profile />
+      </div>
+    </header>
   );
 }
 

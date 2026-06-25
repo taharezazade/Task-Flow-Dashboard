@@ -11,7 +11,7 @@ const activityIcons = {
 
 const ActivityList = () => {
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <div className="card animate__animated animate__fadeIn">
       <div className="card-body">
         <h2 className="card-title">فعالیت‌های اخیر</h2>
 

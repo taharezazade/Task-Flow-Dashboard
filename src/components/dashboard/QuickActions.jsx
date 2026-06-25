@@ -40,7 +40,7 @@ const QuickActions = () => {
   ];
 
   return (
-    <div className="card bg-base-100 border-2 border-secondary/30 shadow-sm">
+    <div className="card bg-base-100 border-2 border-secondary/30 animate__animated animate__fadeIn">
       <div className="card-body">
         <h2 className="card-title">عملیات سریع</h2>
 

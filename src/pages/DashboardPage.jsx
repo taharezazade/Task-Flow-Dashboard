@@ -5,7 +5,7 @@ import DashboardContent from "../components/dashboard/DashboardContent";
 
 function DashboardPage() {
   return (
-    <section className="space-y-8">
+    <section className="space-y-4">
       <DashboardHeader />
 
       <StatsSection />

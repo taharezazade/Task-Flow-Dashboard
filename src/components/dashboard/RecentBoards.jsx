@@ -3,7 +3,7 @@ import BoardPreviewCard from "./BoardPreviewCard";
 
 function RecentBoards() {
   return (
-    <div>
+    <div className="animate__animated animate__fadeIn">
       <h2 className="text-xl font-bold mb-4">بردهای اخیر</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
